@@ -14,7 +14,6 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Getting Started](#getting-started)
 - [Testing](#testing)
 - [Features](#features)
 - [Project Structure](#project-structure)
