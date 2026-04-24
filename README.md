@@ -21,7 +21,7 @@
 
 ## Overview
 
-Falling-Object-Dodge is a fast-paced arcade game built with Python and Pygame. You control a colored player block and must dodge falling blocks unless they match your color. Every 5 points, the falling speed increases.
+Falling-Object-Dodge is a fast-paced arcade game built with Python. You control a colored player block and must dodge falling blocks unless they match your color. Every 5 points, the falling speed increases.
 
 ---
 
