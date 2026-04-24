@@ -1,6 +1,3 @@
-# Neil-and-Vraj-s-Falling-Object-Final-Project-
-Falling Object Final Project 
-
 <div id="top">
 
 <div align="center">
