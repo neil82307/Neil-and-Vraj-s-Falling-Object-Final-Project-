@@ -7,14 +7,6 @@ Falling Object Final Project
 
 # FALLING-OBJECT-DODGE
 
-<em>Dodge the danger. Match the color. Survive the fall.</em>
-
-<img src="https://img.shields.io/github/license/neil82307/falling-object-dodge?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff">
-<img src="https://img.shields.io/github/last-commit/neil82307/falling-object-dodge?style=flat&logo=git&logoColor=white&color=0080ff">
-<img src="https://img.shields.io/github/languages/top/neil82307/falling-object-dodge?style=flat&color=0080ff">
-<img src="https://img.shields.io/github/languages/count/neil82307/falling-object-dodge?style=flat&color=0080ff">
-
-<em>Built With:</em>
 
 <img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white">
 
