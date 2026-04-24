@@ -7,8 +7,6 @@ Falling Object Final Project
 
 # FALLING-OBJECT-DODGE
 
-**https://youtu.be/R4FTpBVzi5k**
-
 <em>Dodge the danger. Match the color. Survive the fall.</em>
 
 <img src="https://img.shields.io/github/license/neil82307/falling-object-dodge?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff">
