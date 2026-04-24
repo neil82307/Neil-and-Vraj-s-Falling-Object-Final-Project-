@@ -54,3 +54,49 @@ font = pygame.font.SysFont(None, 22)
 
 spawn_timer += 1
         if spawn_timer > 25:
+            bx = random.randint(0, SCREEN_WIDTH - BLOCK_SIZE)
+            by = -BLOCK_SIZE
+            color = random.choice(COLORS)
+            blocks.append([bx, by, color])
+            spawn_timer = 0
+
+
+
+        if alive:
+            for b in blocks:
+                b[1] += block_speed
+
+        for b in blocks:
+            if (px < b[0] + BLOCK_SIZE and
+                px + PLAYER_SIZE > b[0] and
+                py < b[1] + BLOCK_SIZE and
+                py + PLAYER_SIZE > b[1]):
+
+                if b[2] != player_color:
+                    alive = False
+                else:
+                    score += 1
+                    blocks.remove(b)
+                    if score % 5 == 0:
+                        block_speed += 1
+
+        blocks = [b for b in blocks if b[1] < SCREEN_HEIGHT]
+
+        screen.fill(BG)
+        pygame.draw.rect(screen, player_color, (px, py, PLAYER_SIZE, PLAYER_SIZE))
+
+        for b in blocks:
+            pygame.draw.rect(screen, b[2], (b[0], b[1], BLOCK_SIZE, BLOCK_SIZE))
+
+        screen.blit(font.render("Score: " + str(score), True, TXT), (6, 6))
+
+        if not alive:
+            msg = font.render("You lost. Close window to exit.", True, TXT)
+            r = msg.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
+            screen.blit(msg, r)
+
+        pygame.display.flip()
+        clock.tick(FPS)
+
+if __name__ == "__main__":
+    main()
